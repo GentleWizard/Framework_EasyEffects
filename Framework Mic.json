@@ -1,0 +1,31 @@
+{
+    "input": {
+        "blocklist": [],
+        "echo_canceller#0": {
+            "bypass": false,
+            "filter-length": 100,
+            "input-gain": 0.0,
+            "near-end-suppression": -70,
+            "output-gain": 0.0,
+            "residual-echo-suppression": -70
+        },
+        "plugins_order": [
+            "echo_canceller#0",
+            "speex#0"
+        ],
+        "speex#0": {
+            "bypass": false,
+            "enable-agc": true,
+            "enable-denoise": true,
+            "enable-dereverb": true,
+            "input-gain": 0.0,
+            "noise-suppression": -70,
+            "output-gain": 0.0,
+            "vad": {
+                "enable": true,
+                "probability-continue": 90,
+                "probability-start": 95
+            }
+        }
+    }
+}
